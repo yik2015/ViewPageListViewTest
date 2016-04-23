@@ -94,7 +94,7 @@ public class ListViewAdapter extends BaseAdapter implements ViewPager.OnPageChan
             list.add(naviItem);
         }
 
-        NaviPagerAdapter adapter=new NaviPagerAdapter(list);
+        NaviPagerAdapter adapter = new NaviPagerAdapter(list, mContext);
 
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(this);
